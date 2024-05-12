@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from './types'
 
 export default function xhr(config: AxiosRequestConfig): void {
-  const { data, url, method = 'get' } = config
+  const { data = null, url, method = 'get' } = config
 
   const request = new XMLHttpRequest()
 
