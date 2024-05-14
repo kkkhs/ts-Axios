@@ -1,6 +1,5 @@
 import axios from '../../src/index'
 
-// 处理 url
 // axios({
 //   method: 'get',
 //   url: '/base/get',
@@ -8,7 +7,7 @@ import axios from '../../src/index'
 //     foo: ['bar', 'baz']
 //   }
 // })
-
+//
 // axios({
 //   method: 'get',
 //   url: '/base/get',
@@ -18,9 +17,9 @@ import axios from '../../src/index'
 //     }
 //   }
 // })
-
+//
 // const date = new Date()
-
+//
 // axios({
 //   method: 'get',
 //   url: '/base/get',
@@ -28,7 +27,7 @@ import axios from '../../src/index'
 //     date
 //   }
 // })
-
+//
 // axios({
 //   method: 'get',
 //   url: '/base/get',
@@ -36,7 +35,7 @@ import axios from '../../src/index'
 //     foo: '@:$, '
 //   }
 // })
-
+//
 // axios({
 //   method: 'get',
 //   url: '/base/get',
@@ -45,7 +44,7 @@ import axios from '../../src/index'
 //     baz: null
 //   }
 // })
-
+//
 // axios({
 //   method: 'get',
 //   url: '/base/get#hash',
@@ -53,7 +52,7 @@ import axios from '../../src/index'
 //     foo: 'bar'
 //   }
 // })
-
+//
 // axios({
 //   method: 'get',
 //   url: '/base/get?foo=bar',
@@ -61,8 +60,7 @@ import axios from '../../src/index'
 //     bar: 'baz'
 //   }
 // })
-
-// 处理body
+//
 // axios({
 //   method: 'post',
 //   url: '/base/post',
@@ -71,48 +69,37 @@ import axios from '../../src/index'
 //     b: 2
 //   }
 // })
-
-// const arr = new Int32Array([21, 31])
-
-// axios({
-//   method: 'post',
-//   url: '/base/buffer',
-//   data: arr
-// })
-
-// 处理 headers
-// axios({
-//   method: 'post',
-//   url: '/base/post',
-//   data: {
-//     a: 1,
-//     b: 2
-//   }
-// })
-
+//
 // axios({
 //   method: 'post',
 //   url: '/base/post',
 //   headers: {
-//     'content-type': 'application/json;',
-//     Accept: 'application/json, text/plain, */*'
+//     'content-type': 'application/json;charset=utf-8'
 //   },
 //   data: {
 //     a: 1,
 //     b: 2
 //   }
 // })
-
+//
+// const arr = new Int32Array([21, 31])
+//
+// axios({
+//   method: 'post',
+//   url: '/base/buffer',
+//   data: arr
+// })
+//
+//
 // const paramsString = 'q=URLUtils.searchParams&topic=api'
 // const searchParams = new URLSearchParams(paramsString)
-
+//
 // axios({
 //   method: 'post',
 //   url: '/base/post',
 //   data: searchParams
 // })
 
-// 获取响应数据
 axios({
   method: 'post',
   url: '/base/post',
@@ -120,7 +107,7 @@ axios({
     a: 1,
     b: 2
   }
-}).then(res => {
+}).then((res) => {
   console.log(res)
 })
 
@@ -132,6 +119,6 @@ axios({
     a: 3,
     b: 4
   }
-}).then(res => {
+}).then((res) => {
   console.log(res)
 })
